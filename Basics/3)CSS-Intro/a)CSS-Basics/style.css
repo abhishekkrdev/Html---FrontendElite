@@ -1,0 +1,62 @@
+* {
+    /* This is a universal selector , whatever you write here is applied to everything */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f2ef;
+}
+
+div {
+    background-color: red;
+}
+
+/* h2 {
+    font-size: larger;
+    background-color: white;
+} */
+
+header {
+    background-color: white;
+}
+
+.mid-text {
+    font-weight: bolder;
+    font-size: medium;
+}
+
+#head-text {
+    text-decoration-line: underline;
+}
+
+input[disabled] {
+    background-color: beige;
+}
+
+div span {
+    color: blue;
+}
+
+div > .extra {
+    text-decoration-line: underline;
+}
+
+h2 ~ h4 {
+    color: chocolate;
+}
+
+/* a:hover {
+    color: red;
+}
+
+a:visited {
+    color: red;
+} */
+
+div:first-child {
+    color: blue;
+}
+
+div::before {
+    content: "...";
+}
