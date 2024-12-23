@@ -1,0 +1,40 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* Unless changed every element has border-box box sizing */
+    box-sizing: border-box; /*https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
+}
+
+*,
+*:before,
+*:after {
+    /* We allow child to follow parent box sizing */
+    box-sizing: inherit;
+}
+
+#demo {
+    width: 200px;
+    border: solid red 5px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#demo2 {
+    width: 200px;
+    border: solid red 5px;
+    /* padding: 10px; */
+    box-sizing: content-box;
+}
+
+#demo3 {
+    border: solid blue 2px;
+    width: 150px;
+    /* width:100%; */
+}

@@ -1,0 +1,38 @@
+html {
+    /* Unless changed every element has border-box box sizing */
+    box-sizing: border-box; /*https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
+}
+
+*,
+*:before,
+*:after {
+    /* We allow child to follow parent box sizing */
+    box-sizing: inherit;
+}
+
+#parent {
+    border: solid red 10px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    height: 500px;
+    justify-content: center; /*To arrange element on main axis*/
+    align-items: center; /* To arrange element on cross axis*/
+    align-content: space-between; /* To arrange element on cross axis*/
+}
+
+#parent div {
+    border: solid blue 2px;
+    padding: 20px;
+    background-color: bisque;
+}
+
+#child1 {
+    /* flex-basis: 100%; */
+    flex-grow: 1;
+}
+
+#child2 {
+    flex-grow: 1;
+}
